@@ -1,11 +1,11 @@
 <?php
 class Client {
-    private $idClient;
-    private $nomEntreprise;
-    private $adresse;
-    private $email;
+    private int $idClient;
+    private string $nomEntreprise;
+    private string $adresse;
+    private string $email;
 
-    public function __construct($idClient, $nomEntreprise, $adresse, $email) {
+    public function __construct(int $idClient, string $nomEntreprise, string $adresse, string $email) {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) throw new Exception("Email invalide");
         $this->idClient = $idClient;
         $this->nomEntreprise = $nomEntreprise;
