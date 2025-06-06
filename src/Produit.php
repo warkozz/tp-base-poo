@@ -13,7 +13,7 @@ class Produit {
         $this->quantiteStock = $quantiteStock;
     }
     public function getCodeProduit() { return $this->codeProduit; }
-    public function getNom() { return $this->nom; }
+    public function getNom():string { return $this->nom; }
     public function getPrixHT() { return $this->prixHT; }
     public function getQuantiteStock() { return $this->quantiteStock; }
     public function afficherInfos() {
